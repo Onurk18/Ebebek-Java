@@ -7,7 +7,7 @@ public class BmiCalc {
         // Variables
         double height, weight, bmi;
 
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); //Scanner object
 
         System.out.print("Lütfen boyunuzu (metre cinsinden) giriniz : ");
         height = input.nextDouble();
@@ -15,8 +15,8 @@ public class BmiCalc {
         System.out.print("Lütfen kilonuzu giriniz : ");
         weight = input.nextDouble();
 
-        bmi = weight / (height * height);
+        bmi = weight / (height * height); // Body mass index formula
 
-        System.out.println("Vücut Kitle İndeksiniz : " + bmi);
+        System.out.println("Vücut Kitle İndeksiniz : " + bmi); //BMI printed.
     }
 }
