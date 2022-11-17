@@ -11,7 +11,7 @@ public class Avg34 {
 
 
         for (int i=0;i<=target;i++){
-            if(i%4==0||i%3==0){
+            if(i%4==0&&i%3==0){
                 sum+=i;
                 count++;
                 System.out.println(count);
