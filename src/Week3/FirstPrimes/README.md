@@ -1,0 +1,1 @@
+ilk 100 sayı içindeki asalları yazdıran program
