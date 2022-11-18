@@ -3,15 +3,14 @@ package Week3.RecPow;
 import java.util.Scanner;
 
 public class RecPow { //üs alma metodu tanımı
-    static int pow(int floor, int pw){
-        if(pw==0){//eğer üs 0 sa 1 döner
+    static int pow(int base, int pw){
+        if(pw!=0){//eğer üs 0 değilse pw base üsün bir düşük olduğula çarpılır
+            return base*pow(base,pw-1);
+        }
+
+
+        else {//eğer üs 0 sa 1 döner
             return 1;
-        }
-        if(pw!=1){// üs 1 değilse pow çağırılır
-            return floor*pow(floor,pw-1);
-        }
-        else {//1 se taban değeri döner
-            return floor;
         }
     }
 
@@ -19,11 +18,11 @@ public class RecPow { //üs alma metodu tanımı
         Scanner input= new Scanner(System.in);
 
         System.out.print("Taban değeri giriniz: ");
-        int floor= input.nextInt();
+        int base= input.nextInt();
         System.out.print("Üs değeri giriniz: ");
         int pw= input.nextInt();
 
-        System.out.println("Sonuç: "+ pow(floor,pw));
+        System.out.println("Sonuç: "+ pow(base,pw));
 
     }
 }
