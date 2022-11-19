@@ -1,0 +1,1 @@
+dizideki elemanları küçükten büyüğe sıralayan programı
