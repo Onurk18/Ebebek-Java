@@ -1,4 +1,4 @@
-package Week4.MineSwapper;
+package Week4.MineSweeper;
 
 import java.util.Scanner;
 

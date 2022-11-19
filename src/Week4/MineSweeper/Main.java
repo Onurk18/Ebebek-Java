@@ -1,4 +1,4 @@
-package Week4.MineSwapper;
+package Week4.MineSweeper;
 
 public class Main {
     public static void main(String[] args) {
